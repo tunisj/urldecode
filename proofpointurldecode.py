@@ -2,7 +2,7 @@
 # Import our Modules
 import urlparse
 import re
-url = raw_input("Enter Proofpoint Encoded URL")
+url = raw_input("Enter Proofpoint Encoded URL:  ")
 class ppdecode(object):
     def __init__(self, url):
         self.pplink = url
@@ -23,4 +23,7 @@ class ppdecode(object):
             self.site = self.arguments['c'][0]
 
 p = ppdecode(url)
+print ''' '''
+print '''You're decoded URL is:'''
+print ''' '''
 print p.url
